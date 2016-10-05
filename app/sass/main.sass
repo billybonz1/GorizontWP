@@ -1,0 +1,935 @@
+@import "bourbon"
+@import "vars"
+@import "libs"
+@import "icons"
+
+//Custom styles here
+.slider-center
+  min-height: 300px
+  margin-top: 30px
+  margin-bottom: 48px
+  .lSAction
+    a
+      width: 20px
+      height: 50px
+      background-color: rgba(2,0,0,0.3)
+      background-image: none
+      opacity: 1
+      .icon
+        position: absolute
+        top: 0
+        left: 0
+        right: 0
+        bottom: 0
+        margin: auto
+    .lSPrev
+      left: 0
+    .lSNext
+      right: 0
+
+
+.slider-bg
+  background-image: url("../img/banner-bg-slide.jpg")
+  height: 100%
+
+.banner-news
+  a
+    color: #555
+    display: block
+    &:hover
+      text-decoration: none
+      background-color: #a0a0a0
+      color: #fff
+
+
+.banner-info.banner-info_m
+  margin-top: 30px
+.banner-info
+  width: 100%
+  min-height: 300px
+  background-image: url("../img/groupbg.png")
+  background-repeat: no-repeat
+  background-position: center center
+  text-align: center
+  color: #fff
+  border: 1px solid #dedfdf
+
+
+  *:first-child
+    padding-top: 20px
+
+
+  div:nth-child(2)
+    padding-top: 70px
+    color: #f15a22
+    font-size: 30px
+    font-weight: 900
+    line-height: 25px
+    b
+      color: #0c4da2
+      font-size: 22px
+  *:nth-child(3)
+    padding-top: 25px
+    color: #fff
+    font-size: 20px
+    font-weight: 900
+    b
+      font-size: 80px
+      color: #fff
+      line-height: 55px
+      letter-spacing: -4px
+      text-shadow: 5px 1px 0 rgba(0, 0, 0, 0.33)
+
+
+.news-h3.news-h3_m
+  margin-top: 0
+.news-h3
+  color: #f15a22
+  font-size: 20px
+  font-weight: 900
+  line-height: 17px
+  padding-left: 22px
+  margin-top: 30px
+  border: 1px solid #dedfdf
+  padding-top: 9px
+  padding-bottom: 15px
+.news-h4
+  a
+    padding-left: 22px
+    padding-top: 9px
+    padding-bottom: 15px
+  color: #555
+  font-size: 13px
+  font-weight: 500
+  line-height: 17px
+  border-bottom: 1px solid #dedfdf
+  border-top: none
+  border-right: 1px solid #dedfdf
+  border-left: 1px solid #dedfdf
+
+
+.banner-prew
+  margin-top: 40px
+  a
+    display: inline-block
+    vertical-align: middle
+  p
+    color: #313131
+    font-size: 13px
+    font-weight: 500
+    line-height: 17px
+    padding-left: 14px
+    display: inline-block
+    vertical-align: middle
+
+.banner-work-news
+  clear: both
+  margin-top: 20px
+  background-color: #0c4da2
+  color: white
+  font-size: 14px
+  font-weight: 900
+  text-align: center
+  padding: 8px 10px
+  p
+    padding: 0
+    margin: 0
+    line-height: 20px
+
+
+.work-border
+  border-top: 1px solid #fff
+  border-bottom: 1px solid #fff
+
+
+
+
+.banner-work-feedback
+  margin-top: 31px
+
+
+.feedback-news
+  border: 1px solid #a0a0a0
+  background-color: #fdb913
+  font-size: 13px
+  font-weight: 500
+  img
+    padding-left: 15px
+    padding-bottom: 15px
+    padding-top: 15px
+    padding-right: 17px
+  a
+    display: block
+    color: #555
+    &:hover
+      text-decoration: none
+
+
+.feedback-news_bord
+  border-bottom: 1px solid #a0a0a0
+  border-top: none
+  border-right: 1px solid #a0a0a0
+  border-left: 1px solid #a0a0a0
+
+.news-b4
+  margin: 31px 0 15px 20px
+  color: #555
+  font-size: 20px
+  font-weight: 900
+
+.data-item
+  border: 1px solid #dedfdf
+  padding-left: 18px
+  padding-top: 13px
+  padding-bottom: 0px
+  margin-bottom: 9px
+  font-size: 12px
+  color: #555
+  position: relative
+  b
+    color: #f15a22
+    padding-top: 5px
+  p
+    text-decoration: underline
+    margin-top: 14px
+    font-weight: 700
+    letter-spacing: -0.2px
+  a
+    padding-left: 150px
+    color: #555
+    text-decoration: underline
+
+.office-h1
+   h1
+     margin: 0
+     margin-top: -10px
+     color: #f4754f
+     font-size: 25px
+     font-weight: 400
+   p
+     font-weight: 400
+     color: #555
+     margin-top: 27px
+
+
+.office-bid
+  margin-top: 15px
+  p
+    display: inline-block
+    font-size: 12px
+    font-weight: 400
+
+
+.bid-orange
+  background-color: #f15a22
+  font-size: 15px
+  font-weight: 400
+  color: #fff
+  padding-left: 19px
+  padding-top: 4px
+  padding-bottom: 5px
+  display: inline-block
+  width: 65%
+
+
+.items-product
+  min-height: 160px
+  position: relative
+  margin-bottom: 60px
+  &:before
+    width: 100%
+    height: 100%
+    content: ""
+    background-color: rgba(0, 0, 0, 0.36)
+    visibility: hidden
+    position: absolute
+    transition: .3s all
+    opacity: 0
+    background-image: url("../img/vector-smart-object.png")
+    background-position: center center
+    background-repeat: no-repeat
+  &:hover::before
+    cursor: pointer
+    opacity: 1
+    visibility: visible
+
+
+.sircle-item
+  background-color: #f15a22
+  border-radius: 30px
+  width: 55px
+  height: 55px
+  text-align: center
+  color: #fff
+  padding-top: 3px
+  padding-left: 10px
+  padding-right: 10px
+  margin-right: 5px
+  position: absolute
+  right: 0
+  margin-top: 10px
+  p
+    border-top: 1px solid #fff
+    border-bottom: 1px solid #fff
+
+.sircle-item.sircle-item_color
+  background-color: #fdb913
+
+
+.in-hand-item
+  position: absolute
+  background-color: #0c4da2
+  color: #fff
+  text-align: center
+  padding-left: 10px
+  padding-right: 10px
+  bottom: 0
+  right: 0
+
+
+.office-items
+  margin-top: 30px
+
+.product-item
+  position: absolute
+  bottom: -43px
+  width: 100%
+
+  p
+    margin-top: 9px
+    display: inline-block
+
+.product-item-colors
+  display: inline-block
+  
+.item-color
+  margin-top: 5px
+  width: 20px
+  height: 20px
+  background-image: url("../img/prototype/item1.png")
+  cursor: pointer
+  float: left
+  margin-right: 2px
+  &:last-child
+    margin-right: 0px
+.item-color.item-color_bg2
+  background-image: url("../img/prototype/item2.png")
+
+.item-color.item-color_bg3
+  background-image: url("../img/prototype/item3.png")
+
+.item-color.item-color_bg4
+  background-image: url("../img/prototype/item4.png")
+
+.item-color.item-color_bg5
+    background-image: url("../img/prototype/item5.png")
+
+.item-color.item-color_bg6
+  background-image: url("../img/prototype/item6.png")
+
+
+.office-suggestion
+  margin-top: 85px
+  text-align: center
+  h2
+    color: #0c4da2
+    font-size: 20px
+    font-weight: 400
+
+
+.office-menu
+  text-align: center
+  display: inline-block
+  li
+    display: inline-block
+    width: 133px
+    min-height: 200px
+    border: 1px solid #dedfdf
+    margin-right: 16px
+    text-align: center
+    padding-top: 170px
+    line-height: 20px
+    background-image: url("../img/glass.png")
+    background-position: center center
+    background-repeat: no-repeat
+    transition: 0.3s
+    &:hover
+      border: 1px solid #0c4da2
+      cursor: pointer
+      background-image: url("../img/glassh.png")
+
+    &:nth-child(2)
+      background-image: url("../img/car.png")
+    &:hover:nth-child(2)
+      background-image: url("../img/carh.png")
+    &:nth-child(3)
+        background-image: url("../img/tools.png")
+    &:hover:nth-child(3)
+      background-image: url("../img/toolsh.png")
+    &:nth-child(4)
+      background-image: url("../img/cash.png")
+    &:hover:nth-child(4)
+      background-image: url("../img/cashh.png")
+    &:first-child
+      background-position: 37px center
+      padding-top: 150px
+    &:last-child
+      background-image: url("../img/luggage.png")
+      margin-right: 0
+      padding-top: 150px
+    &:hover:last-child
+      background-image: url("../img/luggageh.png")
+  a
+    color: #0c4da2
+    font-size: 14px
+    font-weight: 400
+
+
+.office-h1.office-h1_color
+  clear: both
+  p
+    &:nth-child(6)
+      margin-top: 15px
+    &:nth-child(3)
+      margin-top: 10px
+    &:nth-child(7)
+      margin-top: 15px
+  h1
+    margin-top: 49px
+    color: #555
+    font-size: 20px
+  span
+    font-weight: 700
+    text-transform: uppercase
+
+  ul
+    margin-top: 15px
+    list-style: sircle
+    margin-left: 35px
+  li
+    padding-bottom: 13px
+    &:last-child
+      padding-bottom: 0
+
+
+.gorizont-help
+  margin-top: 25px
+
+.help-said
+  border-top: 1px solid #dedfdf
+  padding-top: 30px
+  padding-left: 35px
+  div[class^=col]
+    margin: 0
+    padding: 0
+
+  &:first-child
+    display: block
+    color: #0c4da2
+    text-transform: uppercase
+    font-weight: 700
+
+.helpers-sircle
+  display: inline-block
+  padding-top: 15px
+  padding-right: 14px
+  a
+    color: #555
+
+  &:first-child
+    margin-left: 70px
+
+.gorizont-oranje-menu
+  margin-top: 28px
+.orange-menu
+  min-height: 30px
+  background-color: #f15a22
+
+  li
+    float: left
+    &:last-child
+      padding-left: 2px
+
+
+  a
+    display: block
+    color: #fff
+    font-size: 14px
+    font-weight: 700
+    height: 30px
+    border-right: 1px solid #fc885d
+    border-left: 1px solid #cc4919
+    padding: 5px 83px
+    transition: 0.3s
+    &:hover
+      text-decoration: none
+      background-color: #d43e06
+    &:first-child
+      border-left: none
+    &:last-child
+      border-right: none
+
+
+
+.gorizont-info-footer
+  div[class^=col]
+    padding-right: 0
+  a
+    color: #555
+    font-weight: 400
+    text-decoration: underline
+  ul
+    padding-top: 28px
+    list-style: none
+  ul
+    padding-left: 80px
+
+.gorizont-info.gorizont-info_m
+  margin-top: 35px
+  div[class*=col-md-3]
+    padding-right: 10px
+  div[class*=col-sm-3]
+    padding-right: 15px
+  div[class*=col-sm-9]
+    padding-left: 15px
+  div[class*=col-md-9]
+      padding-left: 10px
+.gorizont-info-footer .info_right
+  padding-left: 55px
+
+.gorizont-info
+  table
+    font-size: 13px
+    font-weight: 400
+    line-height: 17px
+    b
+      border-bottom: 1px solid #b6b6b6
+    td:first-child
+      width: 5.14%
+      text-align: center
+      border-right: 1px solid #b8bbbc
+    td:nth-child(2)
+      width: 22.08%
+      border-right: 1px solid #d1d3d4
+      img
+        padding-left: 5px
+    td:nth-child(3)
+      width: 22.76%
+      border-right: 1px solid #d1d3d4
+      vertical-align: top
+      padding-top: 20px
+      padding-left: 9px
+    td:nth-child(4)
+      width: 23.17%
+      border-right: 1px solid #d1d3d4
+      vertical-align: top
+      padding-top: 20px
+      padding-left: 6px
+    td:nth-child(5)
+      width: 15.44%
+      border-right: 1px solid #d1d3d4
+      vertical-align: top
+      padding-top: 20px
+      padding-left: 6px
+    td:nth-child(6)
+      vertical-align: top
+      width: 11.3%
+      padding-top: 55px
+      a
+        border: none
+
+        padding-left: 20px
+        color: #f15a22
+        text-decoration: underline
+        font-weight: 700
+    border: 1px solid #d1d3d4
+    tr
+      border-right: 1px solid #d1d3d4
+    tr:nth-child(2n)
+      border-bottom: 1px solid #d1d3d4
+
+    th
+      background-color: #d1d3d4
+      height: 61px
+      border-right: 1px solid #b8bbbc
+      border-bottom: 1px solid #d1d3d4
+
+.gorizont-footer
+  margin-top: 25px
+  width: 100%
+  background-color: #0c4da2
+  min-height: 70px
+  text-align: center
+  color: #fff
+  line-height: 10px
+  p:first-child
+    padding-top: 5px
+
+.breadcrumbs
+  ul
+    list-style: none !important
+    padding-left: 0 !important
+
+  li
+    float: left
+    position: relative
+  a
+    color: #555
+    padding-right: 15px
+    font-size: 10px
+    &:after
+      position: absolute
+      top: 7px
+      right: 0px
+      content: ''
+      border: 5px solid transparent
+      border-left: 5px solid #555
+      *:last-child
+        border: none
+
+
+.office-h1.office-h1_b
+  h1
+    margin: 15px 0
+.office-h1.office-h1_ul
+  ul
+    list-style: outside
+    padding-left: 25px
+
+.office-h1.office-h1_g
+  h1
+    margin-top: 25px
+    text-transform: uppercase
+
+.office-h1 p.pad
+   margin-top: 10px
+
+
+.banner-menu
+  ul
+    margin-bottom: 25px
+  li
+    border: 1px solid #dedfdf
+
+
+  a
+    color: #0c4da2
+    font-weight: 700
+    padding-left: 22px
+    padding-top: 15px
+    padding-bottom: 15px
+    display: block
+    &:hover
+      text-decoration: none
+      background-color: #a0a0a0
+      color: #fefefe
+
+.office-slider
+  height: 410px
+  padding-right: 10px
+  position: relative
+.osc-left,.osc-right
+  position: absolute
+  right: 107px
+  width: 36px
+  height: 16px
+  border: 1px solid rgba(255,255,255,0.5)
+  background-color: #0c4da2
+  font-size: 0
+  box-shadow: 0 0 0 2px #0c4da2
+.osc-left
+  top: -20px
+.osc-right
+  bottom: -20px
+.bid-orange.bid-orange_size
+  width: 35%
+  margin-right: 20px
+  text-align: center
+  padding-left: 0
+  a
+    color: #fff
+    display: block
+    &:hover
+      text-decoration: none
+
+.office-category
+  background-color: #ededed
+  padding-left: 10px
+  margin-top: 31px
+  min-height: 121px
+.zag-cat
+  color: #0c4da2
+  font-size: 16px
+  font-weight: 400
+  padding-top: 10px
+  padding-bottom: 10px
+
+.category
+  max-width: 137px
+  width: 137px
+  min-height: 30px
+  text-align: center
+  border: 1px solid #dedfdf
+  background-color: #fff
+  display: inline-block
+  margin-right: 7px
+  margin-bottom: 10px
+  transition: .3s
+  &:hover
+    border: 1px solid #0c4da2
+
+
+  a
+    color: #555
+    font-size: 12px
+    display: block
+    height: 30px
+    padding-top: 5px
+    &:hover
+      text-decoration: none
+
+.category.category-button
+  background-color: #f15a22
+  a
+    color: #fff
+
+.category-colors
+  background-color: #fff
+  padding: 5px
+  display: inline-block
+  border: 1px solid #dedfdf
+  margin-right: 15px
+.another-colors
+  max-height: 60px
+  padding: 15px 11px 18px 11px
+  background-color: #fff
+  border: 1px solid #dedfdf
+  display: inline-block
+  text-align: center
+  vertical-align: middle
+  line-height: 14px
+  font-size: 12px
+  font-weight: 400
+
+.collections-items
+  text-align: center
+  margin-top: 30px
+  h1
+    font-size: 20px
+    color: #555
+    font-weight: 400
+    position: relative
+    &:after
+      content: ""
+      top: 15px
+      right: 0
+      height: 1px
+      position: absolute
+      width: 20%
+      background-color: #f15a22
+    &:before
+      height: 1px
+      top: 15px
+      left: 0
+      position: absolute
+      content: ""
+      width: 20%
+      background-color: #f15a22
+  b
+    color: #f15a22
+
+
+.col-items
+  border: 1px solid #dedfdf
+  background-repeat: no-repeat
+  margin-bottom: 30px
+.in-item
+  *:nth-child(1)
+    text-align: left
+    font-size: 12px
+    font-weight: 400
+    color: #555
+    padding-left: 9px
+    padding-top: 177px
+    b
+     color: #f15a22
+     padding-left: 0px
+  *:nth-child(2)
+    text-align: left
+    font-size: 12px
+    font-weight: 400
+    color: #555
+    padding-left: 10px
+    padding-top: 10px
+    padding-bottom: 17px
+    img
+      padding-top: 0
+      padding-left: 7px
+
+.gray-zag
+  background: #ededed
+  min-height: 50px
+  padding-top: 20px
+  padding-left: 10px
+  font-size: 12px
+  font-weight: 400
+  text-align: left
+
+.select-str
+  ul
+    margin-left: 15px
+  li
+    float: left
+    border: 1px solid #e0e1e1
+  a
+    width: 40px
+    display: block
+    height: 40px
+    text-align: center
+    color: #909da5
+    font-weight: 400
+    padding-top: 10px
+    font-size: 16px
+    &:hover
+      text-decoration: none
+      background-color: #f15a22
+      color: #fff
+
+
+.items-infs
+  *
+    display: inline-block
+    vertical-align: middle
+
+.describe
+  border: 1px solid #dedfdf
+  min-height: 310px
+  max-width: 320px
+  padding-top: 20px
+  margin-left: 15px
+
+.in-desc
+  text-align: right
+  width: 30%
+  display: inline-block
+  font-size: 12px
+  font-weight: 700
+.in-inf
+  font-size: 14px
+  font-weight: 400
+  width: 68%
+  padding-left: 48px
+  b
+    color: #f15a22
+    text-transform: uppercase
+  img
+    padding-top: 7px
+    padding-right: 5px
+    float: left
+.desc-inf
+  width: 100%
+  margin-bottom: 17px
+
+.desc-button
+  background-color: #f15a22
+  margin-left: 50px
+  a
+    color: #fffefe
+    padding: 20px 15px 19px 15px
+    &:hover
+      text-decoration: none
+      background-color: #ec4507
+
+
+.sizep
+  font-size: 14px
+  font-weight: 400
+
+.sized
+  margin-top: 27px
+  font-size: 20px
+  font-weight: 400
+  color: #555
+.office-h1
+  h2
+    font-size: 20px
+    font-weight: 400
+    color: #555
+    margin: 0
+    margin-top: 50px
+
+
+.button-choice
+  margin-top: 25px
+  padding-bottom: 20px
+  text-align: center
+  transition: .3s
+  a
+    color: #fff
+    display: block
+    &:hover
+      text-decoration: none
+.bl-button
+  display: inline-block
+  background-color: #0c4da2
+  width: 35%
+  padding: 5px 0
+  &:hover
+    background-color: #0826e6
+
+.or-button
+  display: inline-block
+  background-color: #f15a22
+  width: 35%
+  padding: 5px 0
+  &:hover
+    background-color: #ec4304
+
+.furnished-slide
+  margin-top: 25px
+.responsive-slide
+  border: 1px solid #dedfdf
+
+  ul
+    height: 100%
+
+  text-align: center
+  background-repeat: no-repeat
+  background-position: center center
+  width: 99.9%
+  min-height: 250px
+  position: relative
+
+.poz-slide
+  position: absolute
+  bottom: 15px
+  left: 9px
+  img
+    padding-left: 8px
+
+
+.furnished-slide
+  .lSSlideWrapper
+    padding-bottom: 45px
+  .lSAction
+    a
+      opacity: 1
+      .icon
+        position: absolute
+        top: 0
+        left: 0
+        right: 0
+        bottom: 0
+        margin: auto
+    .lSPrev
+      position: absolute
+      top: 280px
+      left: 50%
+      margin-left: -34px
+      border-right: 1px solid #0c4da2
+    .lSNext
+     position: absolute
+     top: 280px
+     right: 50%
+     margin-right: -30px
+@import "media"

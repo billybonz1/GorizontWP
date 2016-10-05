@@ -1,0 +1,174 @@
+@import "bourbon"
+@import "sass/vars"
+@import "sass/base"
+
+
+//First screen styles
+.gamburger
+  display: none
+  width: 25px
+  position: absolute
+  left: 10px
+  top: 2px
+  span
+    display: block
+    width: 100%
+    height: 4px
+    margin-bottom: 4px
+    background: #FFFFFF
+
+.mobile-menu
+  display: none
+  background-color: #0c4da2
+  position: fixed
+  overflow: auto
+  width: 300px
+  height: 100%
+  left: 0
+  top: 0
+  &.active
+    display: block
+    & + *
+      position: relative
+      left: 300px
+
+  li
+    margin-top: 15px
+    & > ul
+      display: none
+  a
+    color: #fff
+    font-size: 25px
+    padding: 15px
+    text-decoration: none
+    &:hover
+      color: #19ff00
+
+.secondary-menu
+  position: relative
+  &:after
+    position: absolute
+    content: ''
+    right: 20px
+    top:  10px
+    border: 10px solid transparent
+    border-top: 10px solid #fff
+
+  &.clicked > ul
+    display: block
+.gorizont-head-menu
+  width: 100%
+  min-height: 30px
+  background-color: #ededed
+  border-bottom: 1px solid #bdbdbd
+  box-shadow: -4px 0 4px rgba(22, 22, 23, 0.75)
+
+#second-style
+  padding-left: 15px
+
+.menu-head-top
+  li
+    float: left
+    padding-right: 60px
+    &:last-child
+      padding-right: 0
+  a
+    color: #3c3d3c
+    font-size: 12px
+    text-decoration: none
+    padding-top: 10px
+    line-height: 17px
+    &:hover
+      color: #f15a22
+
+.gorizont-head-top
+  margin-top: 27px
+
+
+.phone-item_bord
+  padding-right: 11px
+  border-right: 1px solid  #0c4da2
+
+.phone-item_rightbord
+  padding-left: 11px
+
+.phone-item
+  display: block
+  max-height: 38px
+  color: #0c4da2
+  font-size: 14px
+  font-weight: 700
+  float: left
+  line-height: 20px
+  p
+    margin: 0
+
+.phone-popup
+  display: inline-block
+  margin-top: 9px
+  padding-left: 25px
+  a
+    color: #f15a22
+    border-bottom: 1px solid #fac1ac
+    font-weight: 900
+    font-size: 12px
+
+    &:hover
+      text-decoration: none
+
+.search-top
+  margin-top: 11px
+  input
+    font-size: 12px
+    line-height: 17px
+    color: #a0a0a0
+    background: #fefefe
+    border: 1px solid #0c4da2
+    padding-top: 6px
+    padding-bottom: 5px
+    padding-left: 9px
+    width: 91%
+    max-width: 289px
+  button
+    border: none
+    margin-left: -4px
+    padding: 0
+    vertical-align: top
+    img
+      width: 100%
+
+
+
+.gorizont-heand-endmenu
+  background-color: #0c4da2
+  width: 100%
+  min-height: 50px
+  margin-top: 40px
+
+.end-menu
+
+  li
+    float: left
+    &:first-child
+      a
+        border-left: none
+    &:last-child
+      a
+        border-right: none
+  a
+    color: #fff
+    transition: .3s
+    display: block
+    font-size: 13px
+    font-weight: 900
+    line-height: 17px
+    padding: 16px 28px
+    border-right: 1px solid #073a7c
+    border-left: 1px solid #216fd5
+    &:hover
+      background-color:  darken(#0c4da2,5)
+      text-decoration: none
+    &:focus
+      background-color:  darken(#0c4da2,1.3)
+
+
